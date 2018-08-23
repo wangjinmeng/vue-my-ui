@@ -24,16 +24,7 @@
 </template>
 <script>
 export default {
-  name: 'ElButton',
-
-  inject: {
-    elForm: {
-      default: ''
-    },
-    elFormItem: {
-      default: ''
-    }
-  },
+  name: 'MyButton',
 
   props: {
     type: {

@@ -1,8 +1,8 @@
-import ElButton from './src/button'
+import MyButton from './src/button'
 
 /* istanbul ignore next */
-ElButton.install = function (Vue) {
-  Vue.component(ElButton.name, ElButton)
+MyButton.install = function (Vue) {
+  Vue.component(MyButton.name, MyButton)
 }
 
-export default ElButton
+export default MyButton
