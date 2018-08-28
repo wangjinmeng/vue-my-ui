@@ -1,0 +1,9 @@
+@import "var";
+@import "transition";
+@import "iconfont";
+
+body {
+  background: $--color-bg;
+  color: $--color-text-primary;
+  font-size: $--font-size;
+}

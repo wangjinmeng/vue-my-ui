@@ -1,0 +1,25 @@
+@import "../mixins/mixins";
+@import "../common/var";
+
+@include b(card) {
+  background-color: $--color-card-bg;
+  overflow: hidden;
+  transition: 0.3s;
+  @include e(header) {
+    border-bottom: 1px solid $--color-border;
+    padding: 0 $--my-card-header-padding;
+    line-height: 2.5em;
+    .name {
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 0.25em;
+        background: $--my-card-header-color-tag;
+        height: 1em;
+        margin-right: 0.5em;
+      }
+    }
+  }
+  @include e(body) {
+  }
+}
