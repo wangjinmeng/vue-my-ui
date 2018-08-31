@@ -27,8 +27,7 @@ gulp.task('compile', function (cb) {
 })
 gulp.task('copyfont', function () {
   return gulp.src('./packages/style/fonts/**')
-    .pipe(cssmin())
     .pipe(gulp.dest(`./${TARGET_PATH}/fonts`))
 })
 
-gulp.task('build', ['compile'])
+gulp.task('build', ['compile','copyfont'])

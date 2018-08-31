@@ -5,7 +5,9 @@ import App from './App'
 import router from './router'
 import MyUi from '../src/index'
 import 'packages/style/index.scss'
+import demoBlock from './components/demo-block.vue'
 
+Vue.component('demo-block', demoBlock)
 Vue.use(MyUi)
 Vue.config.productionTip = false
 
